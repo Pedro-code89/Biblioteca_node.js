@@ -11,12 +11,14 @@ const router = require('express').Router()
 // POST  /books/delete/:id  =>   excluir o livro
 
 router.get('/', (req, res) => {
-    res.render('pages/home')
-  })
+  res.render('pages/home')
+})
 
 router.get('/books/new', (req, res) => {
-    res.render('pages/book_form')
-  })
+  res.render('pages/book_form')
+})
+
+router.post('/books/new');
 
 /* EXPORTA AS ROTAS PARA OUTRO ARQUIVO */
 module.exports = router

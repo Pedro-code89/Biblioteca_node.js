@@ -27,7 +27,6 @@ app.use(routes)
 
 /* ESCUTA REQUISIÇÃO HTTP */
 
-
 app.listen(port, () => {
   console.log(`Rodando em http://localhost:${port}`)
 })
