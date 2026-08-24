@@ -1,6 +1,7 @@
 /* IMPORTA O MODULO ROUTER DO EXPRESS */
 const router = require('express').Router()
 
+const BookController = require('../controllers/BookController')
 /* ROTAS */
 
 // GET   /books             =>   listar todos livros
@@ -18,7 +19,7 @@ router.get('/books/new', (req, res) => {
   res.render('pages/book_form')
 })
 
-router.post('/books/new');
+router.post('/books/new', BookController.store);
 
 /* EXPORTA AS ROTAS PARA OUTRO ARQUIVO */
 module.exports = router

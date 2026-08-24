@@ -19,6 +19,8 @@ app.set('view engine', 'ejs')
 //Definindo ejs como motor de template padrão
 app.set('views', './src/views');
 
+// Configurar o backend
+app.use(express.urlencoded({ extended: true }))
 
 /* ROTAS */
 
