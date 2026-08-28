@@ -5,7 +5,7 @@ const express = require('express');
 
 
 // IMPORTANDO AS ROTAS
-const routes = require('.src/routes/web')
+const routes = require('./src/routes/web')
 
 
 /* CONFIGURAÇÕES DO SERVIDOR */
